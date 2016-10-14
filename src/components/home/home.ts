@@ -41,6 +41,9 @@ import { Component , OnInit } from '@angular/core';
 export class AppComponent {
   public hoge: string;
   public condition: boolean = true;
+  constructor () {
+    this.hoge = localStorage.getItem('amke');
+  }
   onClick(i: number) {
     switch(i) {
     case 0:
